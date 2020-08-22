@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "MostrarClases.h"
+#include "Acumulados.h"
 
 using namespace std;
 
@@ -36,11 +37,13 @@ void menu() {
             system("cls");
             cout<<"Ingrese la seccion de la clase buscada: "<<endl;
             cin>>code;
+            cout<<endl;
             resultSearched = buscarClases(code);
-            cout<<"Su clase buscada: "<<resultSearched<<endl;
+            cout<<"Su clase buscada: "<<endl<<resultSearched<<endl<<endl;
             system("pause");
             break;
         case 3: 
+            mostrarAcumulados();
             break;
         case 4: 
             break;

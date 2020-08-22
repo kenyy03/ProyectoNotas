@@ -12,7 +12,7 @@ string arrayClases[3][2] =
 
 void mostrarClases() {
     system("cls");
-    cout << "Codigo, Nombre" << endl;
+    cout << "Seccion, Nombre" << endl;
     cout << "-------------------------" << endl << endl;
 
     for (int i = 0; i < 3; i++)
