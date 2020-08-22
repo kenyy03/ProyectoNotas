@@ -1,8 +1,9 @@
 #include <iostream>
-
+#include <stdlib.h>
+#include "Login.h"
 using namespace std;
 
-bool login () {
+bool login() {
     string password = "";
     int intentos = 0;
 
@@ -11,12 +12,7 @@ bool login () {
 
         	cout << "Bienvenido a" << endl;
 	
-            cout << "__________              .__          __                                 __                 "<<endl;
-            cout << "\______   \ ____   ____ |__| _______/  |________  ____     ____   _____/  |______    ______"<<endl;
-            cout << " |       _// __ \ / ___\|  |/  ___/\   __\_  __ \/  _ \   /    \ /  _ \   __\__  \  /  ___/"<<endl;
-            cout << " |    |   \  ___// /_/  >  |\___ \  |  |  |  | \(  <_> ) |   |  (  <_> )  |  / __ \_\___ \ "<<endl;
-            cout << " |____|_  /\___  >___  /|__/____  > |__|  |__|   \____/  |___|  /\____/|__| (____  /____  >"<<endl;
-            cout << "        \/     \/_____/         \/                            \/                 \/     \/ "<<endl;
+            cout << "*** REGISTRO NOTAS ***"<<endl;
             cout <<endl;
             
             cout << endl;
