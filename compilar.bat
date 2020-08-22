@@ -1,2 +1,2 @@
-g++ ./main.cpp ./seguridad.cpp ./menu.cpp -o system.exe
+g++ ./main.cpp ./seguridad.cpp ./menu.cpp ./MostrarClases.cpp -o system.exe
 system.exe

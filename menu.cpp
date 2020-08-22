@@ -1,10 +1,13 @@
 #include <iostream>
 #include <stdlib.h>
+#include <string.h>
+#include "MostrarClases.h"
 
 using namespace std;
 
 void menu() {
     bool salir = false;
+    string code, resultSearched;
 
     while(salir == false) {
         int opcion = 0;
@@ -27,14 +30,23 @@ void menu() {
         switch (opcion)
         {
         case 1:
+            mostrarClases();
             break;
         case 2: 
+            system("cls");
+            cout<<"Ingrese la seccion de la clase buscada: "<<endl;
+            cin>>code;
+            resultSearched = buscarClases(code);
+            cout<<"Su clase buscada: "<<resultSearched<<endl;
+            system("pause");
             break;
         case 3: 
             break;
         case 4: 
             break;
-        case 5:
+        case 5: 
+            break;
+        case 6:
             salir = true;
         default:
             break;
