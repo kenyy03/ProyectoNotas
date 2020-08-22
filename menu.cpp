@@ -3,6 +3,7 @@
 #include <string.h>
 #include "MostrarClases.h"
 #include "Acumulados.h"
+#include "seguridad.h"
 
 using namespace std;
 
@@ -20,8 +21,9 @@ void menu() {
 		cout << "2 - Buscar mis clases" << endl;
 		cout << "3 - Mostrar mis acumulados" << endl;
 		cout << "4 - Rendimiento Final" << endl;
-		cout << "5 - Reporte de Rentas" << endl;
-		cout << "6 - Salir" << endl;
+		cout << "5 - Cambiar Password" << endl;
+		cout << "6 - Volver" << endl;
+		cout << "7 - Salir" << endl;
 		
 		cout << endl;
 		cout << endl;				
@@ -46,10 +48,15 @@ void menu() {
             mostrarAcumulados();
             break;
         case 4: 
+            calcularPromedio();
             break;
         case 5: 
+            changePassword();
             break;
         case 6:
+            login();
+            break;
+        case 7:
             salir = true;
         default:
             break;

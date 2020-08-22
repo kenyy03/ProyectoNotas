@@ -3,8 +3,10 @@
 
 using namespace std;
 
+
+string cinPassword = "",defaulPassword="admin";
+
 bool login () {
-    string password = "";
     int intentos = 0;
 
     while (intentos <= 3) {
@@ -27,9 +29,9 @@ bool login () {
         }
 
         cout << "Ingrese su password: ";
-        cin >> password;
+        cin >> cinPassword;
 
-        if (password == "admin") {
+        if (cinPassword == defaulPassword) {
             system("cls");
             return true;
         }
@@ -38,4 +40,21 @@ bool login () {
     }
      
     return false;
+}
+
+bool changePassword()
+{
+    system("cls");
+    cout<<"Ingrese su password actual: "<<endl<<"---> ";
+    cin>> cinPassword;
+
+    if(cinPassword == defaulPassword)
+    {
+        cout<<"Ingrese su nueva password: "<<endl<<"---> ";
+        cin>> cinPassword;
+        defaulPassword = cinPassword;
+        return true;   
+    }
+    else{cout<<"Accion Fallida"<<endl<<endl; return false;}
+    system("pause");
 }
